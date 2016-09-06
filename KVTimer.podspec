@@ -24,8 +24,7 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = "The circular timer for iOS
-With the countdown and the ability to change the design"
+  # s.description  = "The circular timer for iOS With the countdown and the ability to change the design"
 
   s.homepage     = "https://github.com/KochIK/KVTimer"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -63,7 +62,7 @@ With the countdown and the ability to change the design"
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-    s.platform     = :ios
+  # s.platform     = :ios
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
@@ -90,7 +89,7 @@ With the countdown and the ability to change the design"
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes/*.{h,m}"
+   s.source_files  = "Classes/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -116,7 +115,7 @@ With the countdown and the ability to change the design"
   #  the lib prefix of their name.
   #
 
-   s.framework  = "UIKit"
+  # s.framework  = "UIKit/UIKit"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
