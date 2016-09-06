@@ -49,7 +49,7 @@ Pod::Spec.new do |s|
   #
   #  Specify a social_media_url where others can refer to, for example a twitter
   #  profile URL.
-  #
+  # 
 
   s.author             = { "Vlad Kochergin" => "kargod@ya.ru" }
   # Or just: s.author    = "Vlad Kochergin"
