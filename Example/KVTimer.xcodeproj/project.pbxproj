@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C622797F1D7D5F71009BFBA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C622797E1D7D5F71009BFBA4 /* main.m */; };
+		C62279821D7D5F71009BFBA4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C62279811D7D5F71009BFBA4 /* AppDelegate.m */; };
+		C62279851D7D5F71009BFBA4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62279841D7D5F71009BFBA4 /* ViewController.m */; };
+		C62279881D7D5F71009BFBA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C62279861D7D5F71009BFBA4 /* Main.storyboard */; };
+		C622798A1D7D5F71009BFBA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C62279891D7D5F71009BFBA4 /* Assets.xcassets */; };
+		C622798D1D7D5F71009BFBA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C622798B1D7D5F71009BFBA4 /* LaunchScreen.storyboard */; };
+		C62279981D7D5F72009BFBA4 /* KVTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C62279971D7D5F72009BFBA4 /* KVTimerTests.m */; };
+		C62279A31D7D5F72009BFBA4 /* KVTimerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C62279A21D7D5F72009BFBA4 /* KVTimerUITests.m */; };
+		C62279B51D7D5FB7009BFBA4 /* KVStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = C62279B21D7D5FB7009BFBA4 /* KVStyle.m */; };
+		C62279B61D7D5FB7009BFBA4 /* KVTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = C62279B41D7D5FB7009BFBA4 /* KVTimer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C62279941D7D5F72009BFBA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C62279721D7D5F71009BFBA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C62279791D7D5F71009BFBA4;
+			remoteInfo = KVTimer;
+		};
+		C622799F1D7D5F72009BFBA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C62279721D7D5F71009BFBA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C62279791D7D5F71009BFBA4;
+			remoteInfo = KVTimer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C622797A1D7D5F71009BFBA4 /* KVTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KVTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C622797E1D7D5F71009BFBA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C62279801D7D5F71009BFBA4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C62279811D7D5F71009BFBA4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C62279831D7D5F71009BFBA4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C62279841D7D5F71009BFBA4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C62279871D7D5F71009BFBA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C62279891D7D5F71009BFBA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C622798C1D7D5F71009BFBA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C622798E1D7D5F71009BFBA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C62279931D7D5F72009BFBA4 /* KVTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KVTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C62279971D7D5F72009BFBA4 /* KVTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVTimerTests.m; sourceTree = "<group>"; };
+		C62279991D7D5F72009BFBA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C622799E1D7D5F72009BFBA4 /* KVTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KVTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C62279A21D7D5F72009BFBA4 /* KVTimerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVTimerUITests.m; sourceTree = "<group>"; };
+		C62279A41D7D5F72009BFBA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C62279B11D7D5FB7009BFBA4 /* KVStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVStyle.h; sourceTree = "<group>"; };
+		C62279B21D7D5FB7009BFBA4 /* KVStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVStyle.m; sourceTree = "<group>"; };
+		C62279B31D7D5FB7009BFBA4 /* KVTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVTimer.h; sourceTree = "<group>"; };
+		C62279B41D7D5FB7009BFBA4 /* KVTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVTimer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C62279771D7D5F71009BFBA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C62279901D7D5F72009BFBA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C622799B1D7D5F72009BFBA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C62279711D7D5F71009BFBA4 = {
+			isa = PBXGroup;
+			children = (
+				C622797C1D7D5F71009BFBA4 /* KVTimer */,
+				C62279961D7D5F72009BFBA4 /* KVTimerTests */,
+				C62279A11D7D5F72009BFBA4 /* KVTimerUITests */,
+				C622797B1D7D5F71009BFBA4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C622797B1D7D5F71009BFBA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C622797A1D7D5F71009BFBA4 /* KVTimer.app */,
+				C62279931D7D5F72009BFBA4 /* KVTimerTests.xctest */,
+				C622799E1D7D5F72009BFBA4 /* KVTimerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C622797C1D7D5F71009BFBA4 /* KVTimer */ = {
+			isa = PBXGroup;
+			children = (
+				C62279B01D7D5F90009BFBA4 /* KVTimer */,
+				C62279801D7D5F71009BFBA4 /* AppDelegate.h */,
+				C62279811D7D5F71009BFBA4 /* AppDelegate.m */,
+				C62279831D7D5F71009BFBA4 /* ViewController.h */,
+				C62279841D7D5F71009BFBA4 /* ViewController.m */,
+				C62279861D7D5F71009BFBA4 /* Main.storyboard */,
+				C62279891D7D5F71009BFBA4 /* Assets.xcassets */,
+				C622798B1D7D5F71009BFBA4 /* LaunchScreen.storyboard */,
+				C622798E1D7D5F71009BFBA4 /* Info.plist */,
+				C622797D1D7D5F71009BFBA4 /* Supporting Files */,
+			);
+			path = KVTimer;
+			sourceTree = "<group>";
+		};
+		C622797D1D7D5F71009BFBA4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C622797E1D7D5F71009BFBA4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C62279961D7D5F72009BFBA4 /* KVTimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				C62279971D7D5F72009BFBA4 /* KVTimerTests.m */,
+				C62279991D7D5F72009BFBA4 /* Info.plist */,
+			);
+			path = KVTimerTests;
+			sourceTree = "<group>";
+		};
+		C62279A11D7D5F72009BFBA4 /* KVTimerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C62279A21D7D5F72009BFBA4 /* KVTimerUITests.m */,
+				C62279A41D7D5F72009BFBA4 /* Info.plist */,
+			);
+			path = KVTimerUITests;
+			sourceTree = "<group>";
+		};
+		C62279B01D7D5F90009BFBA4 /* KVTimer */ = {
+			isa = PBXGroup;
+			children = (
+				C62279B11D7D5FB7009BFBA4 /* KVStyle.h */,
+				C62279B21D7D5FB7009BFBA4 /* KVStyle.m */,
+				C62279B31D7D5FB7009BFBA4 /* KVTimer.h */,
+				C62279B41D7D5FB7009BFBA4 /* KVTimer.m */,
+			);
+			name = KVTimer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C62279791D7D5F71009BFBA4 /* KVTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C62279A71D7D5F72009BFBA4 /* Build configuration list for PBXNativeTarget "KVTimer" */;
+			buildPhases = (
+				C62279761D7D5F71009BFBA4 /* Sources */,
+				C62279771D7D5F71009BFBA4 /* Frameworks */,
+				C62279781D7D5F71009BFBA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KVTimer;
+			productName = KVTimer;
+			productReference = C622797A1D7D5F71009BFBA4 /* KVTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C62279921D7D5F72009BFBA4 /* KVTimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C62279AA1D7D5F72009BFBA4 /* Build configuration list for PBXNativeTarget "KVTimerTests" */;
+			buildPhases = (
+				C622798F1D7D5F72009BFBA4 /* Sources */,
+				C62279901D7D5F72009BFBA4 /* Frameworks */,
+				C62279911D7D5F72009BFBA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C62279951D7D5F72009BFBA4 /* PBXTargetDependency */,
+			);
+			name = KVTimerTests;
+			productName = KVTimerTests;
+			productReference = C62279931D7D5F72009BFBA4 /* KVTimerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C622799D1D7D5F72009BFBA4 /* KVTimerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C62279AD1D7D5F72009BFBA4 /* Build configuration list for PBXNativeTarget "KVTimerUITests" */;
+			buildPhases = (
+				C622799A1D7D5F72009BFBA4 /* Sources */,
+				C622799B1D7D5F72009BFBA4 /* Frameworks */,
+				C622799C1D7D5F72009BFBA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C62279A01D7D5F72009BFBA4 /* PBXTargetDependency */,
+			);
+			name = KVTimerUITests;
+			productName = KVTimerUITests;
+			productReference = C622799E1D7D5F72009BFBA4 /* KVTimerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C62279721D7D5F71009BFBA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Vlad Kochergin";
+				TargetAttributes = {
+					C62279791D7D5F71009BFBA4 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					C62279921D7D5F72009BFBA4 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = C62279791D7D5F71009BFBA4;
+					};
+					C622799D1D7D5F72009BFBA4 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = C62279791D7D5F71009BFBA4;
+					};
+				};
+			};
+			buildConfigurationList = C62279751D7D5F71009BFBA4 /* Build configuration list for PBXProject "KVTimer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C62279711D7D5F71009BFBA4;
+			productRefGroup = C622797B1D7D5F71009BFBA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C62279791D7D5F71009BFBA4 /* KVTimer */,
+				C62279921D7D5F72009BFBA4 /* KVTimerTests */,
+				C622799D1D7D5F72009BFBA4 /* KVTimerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C62279781D7D5F71009BFBA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C622798D1D7D5F71009BFBA4 /* LaunchScreen.storyboard in Resources */,
+				C622798A1D7D5F71009BFBA4 /* Assets.xcassets in Resources */,
+				C62279881D7D5F71009BFBA4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C62279911D7D5F72009BFBA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C622799C1D7D5F72009BFBA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C62279761D7D5F71009BFBA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C62279851D7D5F71009BFBA4 /* ViewController.m in Sources */,
+				C62279821D7D5F71009BFBA4 /* AppDelegate.m in Sources */,
+				C62279B61D7D5FB7009BFBA4 /* KVTimer.m in Sources */,
+				C62279B51D7D5FB7009BFBA4 /* KVStyle.m in Sources */,
+				C622797F1D7D5F71009BFBA4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C622798F1D7D5F72009BFBA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C62279981D7D5F72009BFBA4 /* KVTimerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C622799A1D7D5F72009BFBA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C62279A31D7D5F72009BFBA4 /* KVTimerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C62279951D7D5F72009BFBA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C62279791D7D5F71009BFBA4 /* KVTimer */;
+			targetProxy = C62279941D7D5F72009BFBA4 /* PBXContainerItemProxy */;
+		};
+		C62279A01D7D5F72009BFBA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C62279791D7D5F71009BFBA4 /* KVTimer */;
+			targetProxy = C622799F1D7D5F72009BFBA4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C62279861D7D5F71009BFBA4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C62279871D7D5F71009BFBA4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C622798B1D7D5F71009BFBA4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C622798C1D7D5F71009BFBA4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C62279A51D7D5F72009BFBA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C62279A61D7D5F72009BFBA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C62279A81D7D5F72009BFBA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KVTimer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ua.com.vk.KVTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C62279A91D7D5F72009BFBA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KVTimer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ua.com.vk.KVTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C62279AB1D7D5F72009BFBA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KVTimerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ua.com.vk.KVTimerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KVTimer.app/KVTimer";
+			};
+			name = Debug;
+		};
+		C62279AC1D7D5F72009BFBA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KVTimerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ua.com.vk.KVTimerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KVTimer.app/KVTimer";
+			};
+			name = Release;
+		};
+		C62279AE1D7D5F72009BFBA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KVTimerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ua.com.vk.KVTimerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KVTimer;
+			};
+			name = Debug;
+		};
+		C62279AF1D7D5F72009BFBA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KVTimerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ua.com.vk.KVTimerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KVTimer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C62279751D7D5F71009BFBA4 /* Build configuration list for PBXProject "KVTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C62279A51D7D5F72009BFBA4 /* Debug */,
+				C62279A61D7D5F72009BFBA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C62279A71D7D5F72009BFBA4 /* Build configuration list for PBXNativeTarget "KVTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C62279A81D7D5F72009BFBA4 /* Debug */,
+				C62279A91D7D5F72009BFBA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C62279AA1D7D5F72009BFBA4 /* Build configuration list for PBXNativeTarget "KVTimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C62279AB1D7D5F72009BFBA4 /* Debug */,
+				C62279AC1D7D5F72009BFBA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C62279AD1D7D5F72009BFBA4 /* Build configuration list for PBXNativeTarget "KVTimerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C62279AE1D7D5F72009BFBA4 /* Debug */,
+				C62279AF1D7D5F72009BFBA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C62279721D7D5F71009BFBA4 /* Project object */;
+}
