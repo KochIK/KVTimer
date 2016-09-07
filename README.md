@@ -8,7 +8,7 @@ The circular timer for iOS - KVTimer
 
 ### Using CocoaPods
 
-DDHTimerControl is available through [CocoaPods](http://cocoapods.org), to install
+KVTimer is available through [CocoaPods](http://cocoapods.org), to install
 it simply add the following line to your Podfile:
 
     pod "KVTimer"
