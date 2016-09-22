@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,44 +19,75 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjR-SB-AYN">
-                                <rect key="frame" x="20" y="617" width="335" height="30"/>
+                                <rect key="frame" x="20" y="420" width="335" height="30"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.80392156859999997" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Nb7-mD-Hhj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Start/Stop">
-                                    <color key="titleColor" red="0.0039215686269999999" green="0.54117647059999996" blue="0.050980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="startOrStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ws1-OI-XCw"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="elc-XB-aRy" customClass="KVTimer">
-                                <rect key="frame" x="50" y="70" width="275" height="300"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="btX-Pi-cl7" customClass="KVTimer">
+                                <rect key="frame" x="20" y="62" width="335" height="65"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="7eY-u6-YiT"/>
+                                    <constraint firstAttribute="height" constant="65" id="qnK-92-qbC"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B31-kS-1wa" customClass="KVTimer">
+                                <rect key="frame" x="20" y="135" width="335" height="107"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="107" id="7Pw-0g-yyw"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Buv-hh-v7K" customClass="KVTimer">
+                                <rect key="frame" x="20" y="250" width="335" height="162"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="0OD-Ly-Aek"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.25882352939999997" green="0.4431372549" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="pjR-SB-AYN" firstAttribute="top" secondItem="Buv-hh-v7K" secondAttribute="bottom" constant="8" symbolic="YES" id="ABh-iH-qbT"/>
                             <constraint firstItem="pjR-SB-AYN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="AW5-DW-CTe"/>
-                            <constraint firstItem="elc-XB-aRy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="Faz-sx-7rU"/>
-                            <constraint firstItem="elc-XB-aRy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="KwD-6a-Cge"/>
-                            <constraint firstAttribute="trailing" secondItem="elc-XB-aRy" secondAttribute="trailing" constant="50" id="Mnl-Ac-uk4"/>
+                            <constraint firstItem="B31-kS-1wa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="H3D-Es-JQ6"/>
+                            <constraint firstItem="btX-Pi-cl7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="QHK-bV-hRY"/>
+                            <constraint firstAttribute="trailing" secondItem="B31-kS-1wa" secondAttribute="trailing" constant="20" id="QXP-yQ-ner"/>
                             <constraint firstAttribute="trailing" secondItem="pjR-SB-AYN" secondAttribute="trailing" constant="20" id="VVc-rK-VOA"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pjR-SB-AYN" secondAttribute="bottom" constant="20" id="oht-C3-0mp"/>
+                            <constraint firstAttribute="trailing" secondItem="Buv-hh-v7K" secondAttribute="trailing" constant="20" id="b6h-wv-MB7"/>
+                            <constraint firstItem="B31-kS-1wa" firstAttribute="top" secondItem="btX-Pi-cl7" secondAttribute="bottom" constant="8" id="e1V-cp-MA9"/>
+                            <constraint firstItem="B31-kS-1wa" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="iKS-8H-FAr"/>
+                            <constraint firstItem="btX-Pi-cl7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="42" id="qqM-Qm-953"/>
+                            <constraint firstAttribute="trailing" secondItem="btX-Pi-cl7" secondAttribute="trailing" constant="20" id="sDU-8Q-W8f"/>
+                            <constraint firstItem="Buv-hh-v7K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="t3j-bI-Jh2"/>
+                            <constraint firstItem="B31-kS-1wa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="uZI-oM-gim"/>
+                            <constraint firstItem="Buv-hh-v7K" firstAttribute="top" secondItem="B31-kS-1wa" secondAttribute="bottom" constant="8" id="yV0-an-BU1"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="H3D-Es-JQ6"/>
+                                <exclude reference="iKS-8H-FAr"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="timer" destination="elc-XB-aRy" id="nwj-RE-KxE"/>
+                        <outletCollection property="timers" destination="btX-Pi-cl7" id="zPI-Yp-iKY"/>
+                        <outletCollection property="timers" destination="B31-kS-1wa" id="vmo-9w-JPA"/>
+                        <outletCollection property="timers" destination="Buv-hh-v7K" id="Osw-MH-N49"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="304.5" y="320.5"/>
+            <point key="canvasLocation" x="894.5" y="154.5"/>
         </scene>
     </scenes>
 </document>

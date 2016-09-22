@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5FF53B0D1E930EC9F6A806C65217E14BF78A6675",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "08459EC2FE0B2CF57B2D6B820B9939379666E3BB" : 0,
+    "5FF53B0D1E930EC9F6A806C65217E14BF78A6675" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D6A8469F-F429-4BAC-8BEE-C40EA0BAFD04",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "08459EC2FE0B2CF57B2D6B820B9939379666E3BB" : "",
+    "5FF53B0D1E930EC9F6A806C65217E14BF78A6675" : "KVTimer\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "KVTimer",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Example\/KVTimer.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/KochIK\/KVTimer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "08459EC2FE0B2CF57B2D6B820B9939379666E3BB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/KochIK\/KVTimer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5FF53B0D1E930EC9F6A806C65217E14BF78A6675"
+    }
+  ]
+}

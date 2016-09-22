@@ -1,10 +1,8 @@
 //
-//  KVStyle.h
-//  TimeCraft
+//  Created by Vlad Kochergin on 11.08.16.
+//  Copyright © 2016 All rights reserved.
 //
-//  Created by Pinta WebWare on 26.08.16.
-//  Copyright © 2016 Pinta WebWare. All rights reserved.
-//
+
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>

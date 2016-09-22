@@ -1,10 +1,8 @@
 //
-//  KVTimer.h
-//  TimeCraft
+//  Created by Vlad Kochergin on 11.08.16.
+//  Copyright © 2016 All rights reserved.
 //
-//  Created by Pinta WebWare on 11.08.16.
-//  Copyright © 2016 Pinta WebWare. All rights reserved.
-//
+
 
 #import <UIKit/UIKit.h>
 #import "KVStyle.h"
@@ -29,10 +27,14 @@ typedef enum KVInterval : NSInteger {
 @property (nonatomic,weak) NSObject<KVTimerDelegate> *delegate;
 
 @property (nonatomic) KVInterval interval; //default KVIntervalSecond
-@property (nonatomic) BOOL showTimerLabel; //default NO;
 @property (nonatomic, strong, readonly) KVStyle *pinStyle;
 @property (nonatomic, strong, readonly) KVStyle *circleStyle;
 @property (nonatomic, strong, readonly) KVStyle *lineStyle;
+
+@property (nonatomic) BOOL showTimerLabel; //default NO;
+@property (nonatomic) BOOL showKofLabel; //default NO;
+@property (nonatomic, strong) NSString *kofString;
+
 
 - (void)setStylePin:(KVStyle *)style;
 - (void)setStyleLine:(KVStyle *)style;

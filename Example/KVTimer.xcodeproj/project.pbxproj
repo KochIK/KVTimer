@@ -518,6 +518,7 @@
 				C62279A91D7D5F72009BFBA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C62279AA1D7D5F72009BFBA4 /* Build configuration list for PBXNativeTarget "KVTimerTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +527,7 @@
 				C62279AC1D7D5F72009BFBA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C62279AD1D7D5F72009BFBA4 /* Build configuration list for PBXNativeTarget "KVTimerUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +536,7 @@
 				C62279AF1D7D5F72009BFBA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
