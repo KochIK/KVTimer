@@ -41,7 +41,7 @@
 #define dR 10 //default radius
 #define k 0.070833
 #define endAngleCircle 10
-#define startAngleCircle -1.5
+#define startAngleCircle -1.57
 #define DEGREES_TO_RADIANS(angle) ((angle) / 180.0 * M_PI)
 
 //0.09583333;//0.070833;
@@ -53,8 +53,8 @@
 
 - (NSInteger)currentTime{
     if(!_currentTime)
-        return _TimeMin;
-    return _currentTime+self.TimeMin;
+        return self.timerActive ? 0 : _TimeMin+1;
+    return _currentTime/*+self.TimeMin*/;
 }
 
 #pragma mark - init
@@ -93,13 +93,28 @@
 
 - (void)setupView{
     [self setBackgroundColor:[UIColor clearColor]];
-    
+    self.currentTime = self.TimeMin;
     self.pinStyle = !self.pinStyle ? [KVStyle initWithFillColor:[UIColor whiteColor] strokeColor:[UIColor clearColor] lineWidth:2 radius:dR] : self.pinStyle;
     self.circleStyle = !self.circleStyle ? [KVStyle initWithFillColor:[UIColor clearColor] strokeColor:[UIColor colorWithWhite:1.0 alpha:0.3] lineWidth:2 radius:R] : self.circleStyle;
     self.lineStyle = !self.lineStyle ? [KVStyle initWithFillColor:[UIColor clearColor] strokeColor:[UIColor whiteColor] lineWidth:2 radius:R] : self.lineStyle;
     self.TimeMin = !self.TimeMin ? 0 : self.TimeMin;
     self.TimeMax = !self.TimeMax ? 60 : self.TimeMax;
     self.interval = !self.interval ? KVIntervalSecond : self.interval;
+    
+    [self.baseCircle removeFromSuperlayer];
+    self.baseCircle = [CAShapeLayer new];
+    
+    self.baseCircle.path = [UIBezierPath bezierPathWithArcCenter:
+                            CGPointMake(self.frame.size.width / 2, self.frame.size.height / 2)
+                                                          radius:self.circleStyle.radius
+                                                      startAngle:0
+                                                        endAngle:endAngleCircle clockwise:YES].CGPath;
+    
+    self.baseCircle.fillColor = self.circleStyle.fillColor.CGColor;
+    self.baseCircle.strokeColor = self.circleStyle.strokeColor.CGColor;
+    self.baseCircle.lineWidth = self.circleStyle.lineWidth;
+    
+    [self.layer addSublayer:self.baseCircle];
 }
 
 - (void)layoutSubviews {
@@ -114,23 +129,23 @@
  */
 - (void)panGestureRecognized:(UIPanGestureRecognizer *)sender
 {
-    CGPoint translation = sender ? [sender locationInView:self] : CGPointMake(243, 71);
+    CGPoint translation = sender ? [sender locationInView:self] : [self timeToCoordinate];//CGPointMake(243, 71);
     if(!sender){
         
-        [self.baseCircle removeFromSuperlayer];
-        self.baseCircle = [CAShapeLayer new];
-        
-        self.baseCircle.path = [UIBezierPath bezierPathWithArcCenter:
-                                CGPointMake(self.frame.size.width / 2, self.frame.size.height / 2)
-                                                              radius:self.circleStyle.radius
-                                                          startAngle:0
-                                                            endAngle:endAngleCircle clockwise:YES].CGPath;
-        
-        self.baseCircle.fillColor = self.circleStyle.fillColor.CGColor;
-        self.baseCircle.strokeColor = self.circleStyle.strokeColor.CGColor;
-        self.baseCircle.lineWidth = self.circleStyle.lineWidth;
-        
-        [self.layer addSublayer:self.baseCircle];
+        //        [self.baseCircle removeFromSuperlayer];
+        //        self.baseCircle = [CAShapeLayer new];
+        //
+        //        self.baseCircle.path = [UIBezierPath bezierPathWithArcCenter:
+        //                                CGPointMake(self.frame.size.width / 2, self.frame.size.height / 2)
+        //                                                              radius:self.circleStyle.radius
+        //                                                          startAngle:0
+        //                                                            endAngle:endAngleCircle clockwise:YES].CGPath;
+        //
+        //        self.baseCircle.fillColor = self.circleStyle.fillColor.CGColor;
+        //        self.baseCircle.strokeColor = self.circleStyle.strokeColor.CGColor;
+        //        self.baseCircle.lineWidth = self.circleStyle.lineWidth;
+        //
+        //        [self.layer addSublayer:self.baseCircle];
         
     }
     CGFloat angleInRadians = atan2f(translation.y - self.frame.size.height/2, translation.x - self.frame.size.width/2);
@@ -145,7 +160,6 @@
 
 - (void)setTimerWithPosition{
     
-    
     CGPoint position = [self handePosition];
     
     if(self.timerActive){
@@ -154,6 +168,10 @@
         }
     }else{
         NSInteger minutesFloat =(atan2f(position.x - self.frame.size.width / 2, position.y - self.frame.size.height / 2) * -(180 / M_PI) + 180)/self.TimeMax;
+        if(minutesFloat<self.TimeMin){
+            minutesFloat = self.TimeMin+1;
+            position = [self timeToCoordinate];
+        }
         self.currentTime = minutesFloat;
     }
     
@@ -209,7 +227,7 @@
 - (void)timerUp{
     
     if(self.currentTime >= 1){
-        self.currentTime -= 1+self.TimeMin;
+        self.currentTime -= 1/*+self.TimeMin*/;
         [self setTimerWithPosition];
     }
     if(self.currentTime == 0){
@@ -289,7 +307,7 @@
 
 - (void)setMaxTime:(NSInteger)max minTime:(NSInteger)min{
     self.TimeMin = min>max ? 0 : min;
-    self.TimeMax = 360.0f / (max-min);
+    self.TimeMax = 360.0f / max;
 }
 
 @end

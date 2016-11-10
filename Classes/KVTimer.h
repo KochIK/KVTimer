@@ -34,7 +34,7 @@ typedef enum KVInterval : NSInteger {
 @property (nonatomic) BOOL showTimerLabel; //default NO;
 @property (nonatomic) BOOL showKofLabel; //default NO;
 @property (nonatomic, strong) NSString *kofString;
-
+@property (nonatomic, readonly, getter=isTimerActive) BOOL timerActive;
 
 - (void)setStylePin:(KVStyle *)style;
 - (void)setStyleLine:(KVStyle *)style;
