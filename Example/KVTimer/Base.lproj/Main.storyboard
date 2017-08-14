@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,48 +19,47 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjR-SB-AYN">
-                                <rect key="frame" x="20" y="420" width="335" height="30"/>
-                                <color key="backgroundColor" red="0.99607843139999996" green="0.80392156859999997" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="20" y="522" width="280" height="30"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.80392156859999997" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Nb7-mD-Hhj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Start/Stop">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="startOrStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ws1-OI-XCw"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="btX-Pi-cl7" customClass="KVTimer">
-                                <rect key="frame" x="20" y="62" width="335" height="65"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="20" y="62" width="280" height="65"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="qnK-92-qbC"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B31-kS-1wa" customClass="KVTimer">
-                                <rect key="frame" x="20" y="135" width="335" height="107"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="20" y="135" width="280" height="107"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="107" id="7Pw-0g-yyw"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Buv-hh-v7K" customClass="KVTimer">
-                                <rect key="frame" x="20" y="250" width="335" height="162"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="20" y="250" width="280" height="162"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="162" id="0OD-Ly-Aek"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.25882352939999997" green="0.4431372549" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.25882352939999997" green="0.4431372549" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="pjR-SB-AYN" firstAttribute="top" secondItem="Buv-hh-v7K" secondAttribute="bottom" constant="8" symbolic="YES" id="ABh-iH-qbT"/>
                             <constraint firstItem="pjR-SB-AYN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="AW5-DW-CTe"/>
                             <constraint firstItem="B31-kS-1wa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="H3D-Es-JQ6"/>
                             <constraint firstItem="btX-Pi-cl7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="QHK-bV-hRY"/>
@@ -69,6 +72,7 @@
                             <constraint firstAttribute="trailing" secondItem="btX-Pi-cl7" secondAttribute="trailing" constant="20" id="sDU-8Q-W8f"/>
                             <constraint firstItem="Buv-hh-v7K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="t3j-bI-Jh2"/>
                             <constraint firstItem="B31-kS-1wa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="uZI-oM-gim"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pjR-SB-AYN" secondAttribute="bottom" constant="16" id="ueQ-MA-1DE"/>
                             <constraint firstItem="Buv-hh-v7K" firstAttribute="top" secondItem="B31-kS-1wa" secondAttribute="bottom" constant="8" id="yV0-an-BU1"/>
                         </constraints>
                         <variation key="default">
@@ -78,7 +82,6 @@
                             </mask>
                         </variation>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outletCollection property="timers" destination="btX-Pi-cl7" id="zPI-Yp-iKY"/>
                         <outletCollection property="timers" destination="B31-kS-1wa" id="vmo-9w-JPA"/>

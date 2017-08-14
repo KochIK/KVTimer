@@ -17,8 +17,8 @@ typedef enum KVInterval : NSInteger {
 
 @protocol KVTimerDelegate
 
--(void)getTimer:(NSString *)time;
--(void)endTime;
+- (void)KVTimer:(KVTimer *)timer willTimeChange:(NSString *)newTime;
+- (void)willTimerEnd:(KVTimer *)timer;
 
 @end
 
@@ -26,25 +26,31 @@ typedef enum KVInterval : NSInteger {
 
 @property (nonatomic,weak) NSObject<KVTimerDelegate> *delegate;
 
-@property (nonatomic) KVInterval interval; //default KVIntervalSecond
 @property (nonatomic, strong, readonly) KVStyle *pinStyle;
 @property (nonatomic, strong, readonly) KVStyle *circleStyle;
 @property (nonatomic, strong, readonly) KVStyle *lineStyle;
-
-@property (nonatomic) BOOL showTimerLabel; //default NO;
-@property (nonatomic) BOOL showKofLabel; //default NO;
+@property (nonatomic) NSInteger currentTime;
 @property (nonatomic, strong) NSString *kofString;
 @property (nonatomic, readonly, getter=isTimerActive) BOOL timerActive;
+/**
+ KVIntervalSecond
+ Default - NO
+ */
+@property (nonatomic) KVInterval interval;
+/**
+ showTimerLabel/showKofLabel
+ Default - NO
+ */
+@property (nonatomic) BOOL showTimerLabel;
+@property (nonatomic) BOOL showKofLabel;
 
 - (void)setStylePin:(KVStyle *)style;
 - (void)setStyleLine:(KVStyle *)style;
 - (void)setStyleCircle:(KVStyle *)style;
 
+- (void)setTime:(NSUInteger)time;
 - (void)setMaxTime:(NSInteger)max minTime:(NSInteger)min;
-
 - (void)startTimer:(BOOL)start;
-
 - (void)stopTimer;
 
-//-(void)forwardGesture:(UIPanGestureRecognizer *)sender;
 @end

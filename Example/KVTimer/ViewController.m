@@ -25,14 +25,20 @@
         [self.timers[i] setShowKofLabel:YES];
         [self.timers[i] setMaxTime:120 minTime:5];
         switch (i) {
-            case 0:
-            {[self.timers[i] setInterval:KVIntervalHour]; [self.timers[i] setKofString:@"Hour"];};
+            case 0:{
+                [self.timers[i] setInterval:KVIntervalHour];
+                [self.timers[i] setKofString:@"Hour"];
+            };
                 break;
-            case 1:
-            {[self.timers[i] setInterval:KVIntervalMinute]; [self.timers[i] setKofString:@"Min"];};
+            case 1:{
+                [self.timers[i] setInterval:KVIntervalMinute];
+                [self.timers[i] setKofString:@"Min"];
+            };
                 break;
-            case 2:
-            {[self.timers[i] setInterval:KVIntervalSecond]; [self.timers[i] setKofString:@"Second"];};
+            case 2:{
+                [self.timers[i] setInterval:KVIntervalSecond];
+                [self.timers[i] setKofString:@"Second"];
+            };
                 break;
             default:
                 break;
@@ -46,19 +52,21 @@
 
 #pragma mark - KVTimer delegate
 
-- (void)getTimer:(NSString *)time{
-    NSLog(@"Time: %@", time);
+- (void)KVTimer:(KVTimer *)timer willTimeChange:(NSString *)newTime{
+    NSLog(@"Time: %@", newTime);
 }
 
-- (void)endTime{
+- (void)willTimerEnd:(KVTimer *)timer{
     UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"KVTimer"
                                                                    message:@"GAME OVER :)"
                                                             preferredStyle:UIAlertControllerStyleAlert];
     [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
     
     [self presentViewController:alert animated:YES completion:nil];
-    
 }
+
+
+#pragma mark - Action
 
 - (IBAction)startOrStop:(UIButton *)sender {
     static BOOL start;
