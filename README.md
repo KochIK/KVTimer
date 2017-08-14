@@ -4,7 +4,7 @@ The circular timer for iOS - KVTimer
 ![](http://s21.postimg.org/jq6kq4t87/ezgif_com_video_to_gif_3.gif)
     
     
-##Installation
+## Installation
     
 ### Using CocoaPods
 
@@ -17,7 +17,7 @@ The circular timer for iOS - KVTimer
  
   Download the project and add the files `KVTimer.{h,m}` to your project.
   
-##Usage
+## Usage
 
   ![](https://s10.postimg.org/xs26od095/ezgif_com_video_to_gif_2.gif)
  
@@ -38,28 +38,20 @@ The circular timer for iOS - KVTimer
      [self.timer setStyleCircle:<#(KVStyle *)#>]
   
      [self.timer startTimer:/* YES / NO */];
-####new
-
      [self.timer setShowTimerLabel:/* YES / NO*/];
      [self.timer setShowKofLabel:/* YES / NO*/];
      [self.timer setKofString:@"min"];
      [self.timer setInterval:KVIntervalMinute /*(KVInterval enum)*/];
      
-###Method delegate:
+### Method delegate:
 
-    - (void)getTimer:(NSString *)time{
-       NSLog(@"Time: %@", time);
-    }
- 
-    - (void)endTime{
-       NSLog(@"Oops");
+    - (void)KVTimer:(KVTimer *)timer willTimeChange:(NSString *)newTime{
+       NSLog(@"Time: %@", newTime);
     }
     
-####new
-    - (void)stopTimer{
-       NSLog(@"Ok");
+    - (void)willTimerEnd:(KVTimer *)timer{
+       NSLog(@"Oops");
     }
-
 
 ## Author
 
